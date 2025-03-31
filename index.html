@@ -1,0 +1,116 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Purpose WebPage</title>
+</head>
+<body>
+    <h1>Welcome to the Sample Page</h1>
+    
+    <h2>Roman Numeral Ordered List</h2>
+    <ol type="I">
+        <li>Avocado</li>
+        <li>Mangoes</li>
+        <li>Pineapples</li>
+        <li>Bananas</li>
+        <li>Apples</li>
+    </ol>
+    
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mansion" width="500">
+
+    
+    <h2>Contact List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frank Mokaya</td>
+                <td>Nrb GPO</td>
+                <td>+254700123456</td>
+                <td>m_kaya@hetga.com</td>
+            </tr>
+            <tr>
+                <td>Jane Mutindi</td>
+                <td>4th Avenue Ngong Rd</td>
+                <td>+254700654321</td>
+                <td>j_tindi@hetga.com</td>
+            </tr>
+            <tr>
+                <td>Mike Samson</td>
+                <td>Michuki Drive</td>
+                <td>+254700987654</td>
+                <td>m_son@hetga.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Brown</td>
+                <td>Juja Rd</td>
+                <td>+254700876543</td>
+                <td>s_own@hetga.com</td>
+            </tr>
+            <tr>
+                <td>Emma White</td>
+                <td>Likoni Rd</td>
+                <td>+254700765432</td>
+                <td>e_ite@hetga.com</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h1>Registration Form</h1>
+    <form action="/submit" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown Menu -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="ethiopia">Ethiopia</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling">Traveling</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
